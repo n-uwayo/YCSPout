@@ -1,0 +1,111 @@
+/* Custom CSS for Hangahub Musanze homepage */
+
+
+/* Header */
+
+
+/* .container-flui{
+    background-color: rgba(21, 22, 22, 0.938); 
+    color: rgb(133, 188, 236);
+    
+} */
+
+body {
+    overflow-x: scroll;
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+}
+
+.jumbotron {
+    background-color: rgba(207, 235, 235, 0.5);
+    padding: 3rem 1rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.container-fluid {
+    background-image: url('images/backgr.png');
+    background-size: cover;
+    min-height: 100vh;
+    background-color: rgba(116, 243, 243, 0.5);
+    background-color: rgb(236, 228, 228);
+}
+
+
+/* Sections */
+
+.section-one {
+    padding: 0;
+    background-color: rgba(116, 243, 243, 0.5);
+    /* Aqua color with 50% opacity */
+}
+
+.navbar {
+    background-color: #343a40;
+    /* Background color similar to the footer */
+    color: #ffffff;
+    /* Text color */
+    padding: 0.5rem 2rem;
+    /* Adjust padding as needed */
+}
+
+.navbar-brand {
+    color: rgba(54, 15, 196, 0.829);
+    /* font-size: 1.5rem; */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+input {
+    size: 20rem;
+}
+
+.navbar-brand p {
+    font-size: 1rem;
+    margin: -1rem 2rem;
+}
+
+.navbar-toggler {
+    color: #ffffff;
+    /* Color for the toggler icon */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    /* Color for the navigation links */
+    margin-right: 0rem;
+    /* Adjust spacing between links */
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    /* Style for the active link */
+}
+
+.navbarNav {
+    /* background-color: hsl(0, 79%, 34%); */
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    grid-gap: 5rem;
+    margin-top: -2rem;
+    margin-left: 25rem;
+    color: #ffffff;
+}
+
+.navbarNav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 1rem 0;
+    /* margin-top: auto; */
+}
