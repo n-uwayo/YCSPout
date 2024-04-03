@@ -126,6 +126,43 @@ if(isset($_POST['submit'])) {
     
 }
 
+form {
+            margin-bottom: 0.2rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            padding-left: 0.2rem;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 30%;
+            padding: 1rem;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="file"] {
+            margin-top: 5px;
+        }
+
+        /* CSS for the buttons */
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+
     </style>
 
 
@@ -143,16 +180,17 @@ if(isset($_POST['submit'])) {
     </a>
     <div class="navbarNav" style="margin-left: 900px; margin-right: 100px;" >
       <a class="nav-link active" aria-current="page" href="#" onclick="">Home</a>
-      <a class="nav-link" href="#" onclick="toggleSignup()">Signup</a>
-      <a class="nav-link" href="#" onclick="toggleLogin()">Login</a> <!-- Added Login link -->
+      <a class="nav-link" href="submition.php">Students' submitions</a>
+      <a class="nav-link" href="index.php">Logout</a> 
+      
     </div>
   </div>
 </nav>
 <div class="container-fluid">
 
 <header class="jumbotron">
-    <h2>Welcome to YCSPout Platform Its your time to improve public speaking skills.</h2>
-    <p style="font-size:1.5rem; font-style: italic;  background-color: rgb(236, 228, 228);" >From begnning level to high level of public speaking.</p>
+    <h2>Welcome Instructor or Educator to YCSPout Platform .</h2>
+    <p style="font-size:1.5rem; font-style: italic;  background-color: rgb(236, 228, 228);" >Your support is important to improve public speaking skills for rural area students.</p>
   </header>
    <form method="POST" enctype="multipart/form-data">
         <label for="level">Level:</label>
@@ -186,8 +224,8 @@ if(isset($_POST['submit'])) {
     <div style="padding-left: 150px; ">
         <p  class="task-description"><?php echo $row['task']; ?></p>
         <p style="font-size: 1.5rem; color:rgb(24, 23, 23); font-weight: 400;">Uploaded at: <?php echo $row['aploaded_at']; ?></p>
-        <!-- Add edit and delete buttons -->
-        <a href="?delete_id=<?php echo $row['id']; ?>" style="font-size: 1.5rem; color:white; background-color: rgb(11, 128, 128); font-weight: 400; border-radius: 10px; text-decoration: none;margin-left: 3rem;">Delete</a>
+        <!-- Add edit and delete buttons  -->
+        <a href="?delete_id=<?php echo $row['id']; ?>" style="font-size: 1.5rem; color:white; background-color: rgb(11, 128, 128); font-weight: 400; border-radius: 10px; text-decoration: none;">Delete</a>
         <form  style="display: inline; margin-top: 200px; " method="POST" enctype="multipart/form-data" style="display: inline; margin-top: 200px; ">
             <input  style="display: inline; margin-top: 20px; " type="file" name="video" accept="video/*"/>
             <input type="hidden" name="update_id" value="<?php echo $row['id']; ?>">
@@ -199,7 +237,7 @@ if(isset($_POST['submit'])) {
                 <option value="intermediate" <?php echo ($row['level'] == 'intermediate') ? 'selected' : ''; ?>>Intermediate</option>
                 <option value="advanced" <?php echo ($row['level'] == 'advanced') ? 'selected' : ''; ?>>Advanced</option>
             </select><br><br>
-            <button type="submit" name="update" style="font-size: 1.5rem; color:white; background-color: rgb(11, 128, 128); font-weight: 400; border-radius: 10px; text-decoration: none;margin-left: 3rem;">Edit</button>
+            <button type="submit" name="update" style="font-size: 1.5rem; color:white; background-color: rgb(11, 128, 128); font-weight: 400; border-radius: 10px; text-decoration: none;">Edit</button>
         </form>
       </div>
     </div>

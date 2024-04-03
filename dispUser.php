@@ -78,7 +78,7 @@ if(isset($_POST['submit'])) {
     </a>
     <div class="navbarNav">
       <a class="nav-link active" aria-current="page" href="index.php" onclick="toggleSignup()">Home</a>
-      <a class="nav-link" href="dispUser.php" onclick="toggleSignup()">My account</a>
+      <a class="nav-link" href="user.php">My account</a>
       <a class="nav-link" href="?get_feedback=true" onclick="toggleSignup()">Get Feedback</a> <!-- Link to get feedback -->
       <a class="nav-link" href="index.php" onclick="toggleLogin()">Logout</a> <!-- Added Login link -->
     </div>

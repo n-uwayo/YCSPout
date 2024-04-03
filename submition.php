@@ -7,12 +7,12 @@ include("functions.php");
 $query = "SELECT * FROM user_videos";
 $result = mysqli_query($con, $query);
 
-// Feedback Submission Logic
+// Feedback Submission 
 if(isset($_POST['submit_feedback'])) {
     $educator_name = $_POST['educator_name'];
     $feedback = $_POST['feedback'];
 
-    // Insert feedback into the database
+    
     $insert_query = "INSERT INTO feedback (educator_name, feedback) VALUES ('$educator_name', '$feedback')";
     mysqli_query($con, $insert_query);
 }
@@ -36,8 +36,8 @@ if(isset($_POST['submit_feedback'])) {
     </a>
     <div class="navbarNav">
       <a class="nav-link active" aria-current="page" href="index.php" onclick="toggleSignup()">Home</a>
-      <a class="nav-link" href="dispUser.php" onclick="toggleSignup()">My account</a>
-      <a class="nav-link" href="index.php" onclick="toggleLogin()">Logout</a> <!-- Added Login link -->
+      <a class="nav-link" href="ed.php" >Back</a>
+      <a class="nav-link" href="index.php">Logout</a> 
     </div>
   </div>
 </nav>
@@ -80,7 +80,7 @@ if(isset($_POST['submit_feedback'])) {
 </section>
 </div>
 
-<!-- Feedback Form -->
+
 
 
 <footer class="footer">
