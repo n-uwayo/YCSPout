@@ -7,6 +7,16 @@ include("functions.php");
 $query = "SELECT * FROM user_videos";
 $result = mysqli_query($con, $query);
 
+// Feedback Submission Logic
+if(isset($_POST['submit_feedback'])) {
+    $educator_name = $_POST['educator_name'];
+    $feedback = $_POST['feedback'];
+
+    // Insert feedback into the database
+    $insert_query = "INSERT INTO feedback (educator_name, feedback) VALUES ('$educator_name', '$feedback')";
+    mysqli_query($con, $insert_query);
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -46,7 +56,7 @@ $result = mysqli_query($con, $query);
                 </div>
                 <div class="video-info">
                     <div>
-                        <p class="task-description">Video Name<?php echo $row['video_name']; ?></p>
+                        <p class="task-description">Video Name: <?php echo $row['video_name']; ?></p>
                         <p>Names: <?php echo $row['uploader_name']; ?></p>
                         <p>Description: <?php echo $row['description']; ?></p>
                         <p>Uploaded at: <?php echo $row['uploaded_at']; ?></p>
@@ -56,7 +66,22 @@ $result = mysqli_query($con, $query);
             <?php endwhile; ?>
         </div>
     </section>
+    <section class="section-feedback">
+    <div class="container">
+        <h2>Leave Feedback</h2>
+        <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+            <label for="educator_name">Educator Name:</label>
+            <input type="text" name="educator_name" id="educator_name" required><br><br>
+            <label for="feedback">Feedback:</label><br>
+            <textarea name="feedback" id="feedback" rows="4" cols="50" required></textarea><br><br>
+            <button type="submit" name="submit_feedback">Send Feedback</button>
+        </form>
+    </div>
+</section>
 </div>
+
+<!-- Feedback Form -->
+
 
 <footer class="footer">
     <div class="container text-center">

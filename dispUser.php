@@ -1,8 +1,13 @@
 <?php
-// Include the database connection file
 session_start();
 include("connection.php");
 include("functions.php");
+
+// Retrieve feedback from the database if the "Get Feedback" link is clicked
+if(isset($_GET['get_feedback'])) {
+    $query = "SELECT * FROM feedback";
+    $result = mysqli_query($con, $query);
+}
 
 ini_set('upload_max_filesize', '100M');
 // Set maximum post data size
@@ -74,6 +79,7 @@ if(isset($_POST['submit'])) {
     <div class="navbarNav">
       <a class="nav-link active" aria-current="page" href="index.php" onclick="toggleSignup()">Home</a>
       <a class="nav-link" href="dispUser.php" onclick="toggleSignup()">My account</a>
+      <a class="nav-link" href="?get_feedback=true" onclick="toggleSignup()">Get Feedback</a> <!-- Link to get feedback -->
       <a class="nav-link" href="index.php" onclick="toggleLogin()">Logout</a> <!-- Added Login link -->
     </div>
   </div>
@@ -103,7 +109,21 @@ if(isset($_POST['submit'])) {
    </form>
    </div>
 </section>
+
+<?php if(isset($result)): ?>
+<section class="feedback-section">
+    <h2>Feedback</h2>
+    <?php while($row = mysqli_fetch_assoc($result)): ?>
+        <div class="feedback-item">
+            <p><strong>Educator Name:</strong> <?php echo $row['educator_name']; ?></p>
+            <p><strong>Feedback:</strong> <?php echo $row['feedback']; ?></p>
+        </div>
+    <?php endwhile; ?>
+</section>
+<?php endif; ?>
+
 </div>
+
 <footer class="footer">
   <div class="container text-center">
     <p>&copy; 2024 YCSPOut. All Rights Reserved.</p>

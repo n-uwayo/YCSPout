@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     exit();
                 } elseif ($role === 'admin') {
                     $_SESSION['admin_id'] = $user_data['id'];
-                    header("Location: admin.php");
+                    header("Location: adm.php");
                     exit();
                 }
                 elseif ($role === 'educator') {
