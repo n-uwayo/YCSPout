@@ -179,7 +179,7 @@ form {
       <img src="images/log.png" alt="ycp" width="50" height="50" class="d-inline-block align-top"><p style="color:beige;">You Can Speak Out</p>
     </a>
     <div class="navbarNav" style="margin-left: 900px; margin-right: 100px;" >
-      <a class="nav-link active" aria-current="page" href="#" onclick="">Home</a>
+      <a class="nav-link active" aria-current="page" href="index.php" >Home</a>
       <a class="nav-link" href="submition.php">Students' submitions</a>
       <a class="nav-link" href="index.php">Logout</a> 
       
@@ -249,7 +249,7 @@ form {
 
    <footer class="footer">
   <div class="container text-center">
-    <p>&copy; 2024 YCSPOut. All Rights Reserved.</p>
+    <p>&copy; 2024 YCSPOut.Empowering Rural Students to Speak Out. All Rights Reserved.</p>
   </div>
 </footer>
 </body>

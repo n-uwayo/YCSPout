@@ -137,18 +137,14 @@ if(isset($_POST['submit'])) {
       <img src="images/log.png" alt="ycp" width="50" height="50" class="d-inline-block align-top"><p style="color:beige;">You Can Speak Out</p>
     </a>
     <div class="navbarNav" style="margin-left: 900px; margin-right: 100px;" >
-      <a class="nav-link active" aria-current="page" href="#" onclick="">Home</a>
+      <a class="nav-link active" aria-current="page" href="index.php" >Home</a>
+      <a class="nav-link active" aria-current="page" href="adm.php" >Back</a>
       
     </div>
   </div>
 </nav>
 <div class="container-fluid">
 
-<header class="jumbotron">
-    <h2>Welcome to YCSPout Platform Its your time to improve public speaking skills.</h2>
-    <p style="font-size:1.5rem; font-style: italic;  background-color: rgb(236, 228, 228);" >From begnning level to high level of public speaking.</p>
-  </header>
-  
 
    <div>
    <div class="video-pair-container">
@@ -184,7 +180,7 @@ if(isset($_POST['submit'])) {
 
    <footer class="footer">
   <div class="container text-center">
-    <p>&copy; 2024 YCSPOut. All Rights Reserved.</p>
+    <p>&copy; 2024 YCSPOut.Empowering Rural Students to Speak Out. All Rights Reserved.</p>
   </div>
 </footer>
 </body>

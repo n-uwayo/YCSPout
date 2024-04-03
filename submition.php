@@ -35,7 +35,7 @@ if(isset($_POST['submit_feedback'])) {
       <img src="images/log.png" alt="ycspout" width="30" height="30" class="d-inline-block align-top"><p style="color:beige;">You Can Speak Out</p>
     </a>
     <div class="navbarNav">
-      <a class="nav-link active" aria-current="page" href="index.php" onclick="toggleSignup()">Home</a>
+      <a class="nav-link active" aria-current="page" href="index.php">Home</a>
       <a class="nav-link" href="ed.php" >Back</a>
       <a class="nav-link" href="index.php">Logout</a> 
     </div>
@@ -85,7 +85,7 @@ if(isset($_POST['submit_feedback'])) {
 
 <footer class="footer">
     <div class="container text-center">
-        <p>&copy; 2024 YCSPOut. All Rights Reserved.</p>
+        <p>&copy; 2024 YCSPOut.Empowering Rural Students to Speak Out. All Rights Reserved.</p>
     </div>
 </footer>
 </body>

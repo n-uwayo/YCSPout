@@ -1,14 +1,14 @@
 <?php
-// Include the database connection file
+// Include connection file
 session_start();
 include("connection.php");
 include("functions.php");
 
 ini_set('upload_max_filesize', '100M');
-// Set maximum post data size
+//  maximum post data size
 ini_set('post_max_size', '100M');
 
-// Function to handle video deletion and task
+//  video deletion and task
 if(isset($_GET['delete_id'])) {
     $delete_id = $_GET['delete_id'];
     
@@ -23,15 +23,15 @@ if(isset($_GET['delete_id'])) {
     $delete_query = "DELETE FROM learn WHERE id = $delete_id";
     mysqli_query($con, $delete_query);
 
-    // Delete the file from the server
+    
     unlink($filepath_to_delete);
 
-    // Redirect to avoid resubmission on refresh
+    
     header("Location: ".$_SERVER['PHP_SELF']);
     exit();
 }
 
-// Function to handle video update and task
+// video update and task
 if(isset($_POST['update'])) {
     $update_id = $_POST['update_id'];
     $file_name = $_FILES['video']['name'];
@@ -40,19 +40,15 @@ if(isset($_POST['update'])) {
     $task = $_POST['task'];
     $level = $_POST['level'];
 
-    // Update the record in the database
-    // $update_query = "UPDATE learn SET filename='$file_name', filepath='$folder', task='$task', level='$level' WHERE id=$update_id";
-    // mysqli_query($con, $update_query);
-
-    // Move the uploaded file to the server
+   
     move_uploaded_file($tempname, $folder);
 
-    // Redirect to avoid resubmission on refresh
+    
     header("Location: ".$_SERVER['PHP_SELF']);
     exit();
 }
 
-// Function to handle video addition and task
+//  video addition and task
 if(isset($_POST['submit'])) {
     $level = $_POST['level'];
     $task = $_POST['task'];
@@ -66,10 +62,10 @@ if(isset($_POST['submit'])) {
     $stmt->execute();
     $stmt->close();
 
-    // Move the uploaded file to the server
+    
     move_uploaded_file($tempname, $folder);
 
-    // Redirect to avoid resubmission on refresh
+    
     header("Location: ".$_SERVER['PHP_SELF']);
     exit();
 }
@@ -82,13 +78,13 @@ if(isset($_POST['submit'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YCSPout</title>
   <link rel="icon" href="<?php echo $path_to_logo = "images/log.png";?>" type="image/png">
-  <!-- Bootstrap CSS -->
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+z1s/JmLXaut9tPIGhclksx5qKGCDLIpuU1xJ2h" crossorigin="anonymous">
-  <!-- Custom CSS -->
+
   <link rel="stylesheet" href="index.css">
 
   <style>
-        /* CSS for displaying videos in pairs */
+       
         .video-pair-container {
             display: flex;
             flex-wrap: wrap;
@@ -98,19 +94,19 @@ if(isset($_POST['submit'])) {
         .video-pair {
             display: flex;
             flex-wrap: wrap;
-            width: calc(50% - 20px); /* Set width to 50% with margin */
+            width: calc(50% - 20px); 
             margin-bottom: 20px;
         }
 
         .video-wrapper {
-            width: calc(50% - 20px); /* Set width to 50% with margin */
+            width: calc(50% - 20px); 
             margin-right: 20px;
             margin-bottom: 20px;
         }
 
         .video-wrapper video {
-            width: 100%; /* Make the video fill the container */
-            height: auto; /* Maintain aspect ratio */
+            width: 100%;
+            height: auto; 
         }
 
         .video-info {
@@ -142,9 +138,9 @@ if(isset($_POST['submit'])) {
       <img src="images/log.png" alt="ycp" width="50" height="50" class="d-inline-block align-top"><p style="color:beige;">You Can Speak Out</p>
     </a>
     <div class="navbarNav" style="margin-left: 900px; margin-right: 100px;" >
-      <a class="nav-link active" aria-current="page" href="#" onclick="">Home</a>
-      <a class="nav-link" href="#" onclick="toggleSignup()">Signup</a>
-      <a class="nav-link" href="#" onclick="toggleLogin()">Login</a> <!-- Added Login link -->
+      <a class="nav-link active" aria-current="page" href="index.php" >Home</a>
+      <a class="nav-link" href="dispUser.php" >My space</a>
+      <a class="nav-link" href="index.php">Logout</a> 
     </div>
   </div>
 </nav>
@@ -154,19 +150,7 @@ if(isset($_POST['submit'])) {
     <h2>Welcome to YCSPout Platform Its your time to improve public speaking skills.</h2>
     <p style="font-size:1.5rem; font-style: italic;  background-color: rgb(236, 228, 228);" >From begnning level to high level of public speaking.</p>
   </header>
-   <!-- <form method="POST" enctype="multipart/form-data">
-        <label for="level">Level:</label>
-        <select name="level" id="level">
-            <option value="beginner">Beginner</option>
-            <option value="intermediate">Intermediate</option>
-            <option value="advanced">Advanced</option>
-        </select><br><br>
-        <label for="task">Task Description:</label>
-        <input type="text" name="task" id="task"><br><br>
-        <label for="video">Select Video:</label>
-        <input type="file" name="video" id="video" accept="video/*"><br><br>
-        <input type="submit" value="Upload" name="submit">
-   </form> -->
+ 
 
    <div>
    <div class="video-pair-container">
@@ -202,7 +186,7 @@ if(isset($_POST['submit'])) {
 
    <footer class="footer">
   <div class="container text-center">
-    <p>&copy; 2024 YCSPOut. All Rights Reserved.</p>
+    <p>&copy; 2024 YCSPOut.Empowering Rural Students to Speak Out. All Rights Reserved.</p>
   </div>
 </footer>
 </body>

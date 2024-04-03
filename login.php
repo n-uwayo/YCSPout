@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             if (password_verify($password, $user_data['password'])) {
                 $role = $user_data['role'];
 
-                if ($role === 'user') {
+                if ($role === 'student') {
                     $_SESSION['user_id'] = $user_data['id'];
                     header("Location: user.php");
                     exit();

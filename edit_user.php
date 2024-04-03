@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Perform SQL update to edit the user
     $update_query = "UPDATE user SET names='$names', email='$email', role='$role' WHERE id=$user_id";
     if (mysqli_query($con, $update_query)) {
-        header("Location: admin.php"); // Redirect back to the admin page
+        header("Location: adm.php"); // Redirect back to the admin page
         exit;
     } else {
         echo "Error: " . mysqli_error($con);

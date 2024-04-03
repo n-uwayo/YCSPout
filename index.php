@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YCSPout</title>
   <link rel="icon" href="<?php echo $path_to_logo = "images/log.png";?>" type="image/png">
-  <!-- Bootstrap CSS -->
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+z1s/JmLXaut9tPIGhclksx5qKGCDLIpuU1xJ2h" crossorigin="anonymous">
-  <!-- Custom CSS -->
+
   <link rel="stylesheet" href="styles.css">
 
   <style>
@@ -15,10 +15,10 @@
     width: 100%;
     margin-top: 6rem;
   }
-   /* Increase favicon size */
+   
    link[rel="icon"] {
-            width: 32px; /* Adjust the width as needed */
-            height: 32px; /* Adjust the height as needed */
+            width: 32px; 
+            height: 32px; 
         }
 </style>
 </head>
@@ -32,7 +32,7 @@
     <div class="navbarNav" style="margin-left: 900px; margin-right: 100px;" >
       <a class="nav-link active" aria-current="page" href="#" onclick="">Home</a>
       <a class="nav-link" href="#" onclick="toggleSignup()">Signup</a>
-      <a class="nav-link" href="#" onclick="toggleLogin()">Login</a> <!-- Added Login link -->
+      <a class="nav-link" href="#" onclick="toggleLogin()">Login</a> 
     </div>
   </div>
 </nav>
@@ -62,7 +62,7 @@
             <label for="role">Password</label><br><br>
             <input id="text" type="password" name="password" placeholder="Password"><br><br>
             <input id="button" type="submit" value="Register" onclick="toggleLogin()"><br><br>
-             <p>Already have account <a href="#" onclick="toggleLogin()">Login here</a></p> <!-- Clicking this will toggle login form -->
+             <p>Already have account <a href="#" onclick="toggleLogin()">Login here</a></p> 
             <a href="#" onclick="toggleSignup()">Close form</a><br><br>
           </form>
         </div>
@@ -71,7 +71,7 @@
   </div>
 </div>
 
-<div id="loginForm" style="display: none;margin-left: 900px;"> <!-- Hidden login form -->
+<div id="loginForm" style="display: none;margin-left: 900px;"> 
   <form method="post" action="login.php">
     <div style="font-size: 20px; margin: 10px; margin-top: -70px; color: white;">Login</div>
     <label for="email">Email</label><br>
@@ -90,7 +90,7 @@
     <p style="font-size:1.2rem; font-style: italic; background-color: rgb(236, 228, 228);padding:0.4rem;">Public speaking is a skill that you can learn. It's like riding a bicycle or typing. If you're willing to work at it, you can rapidly improve the quality of every part of your life.</p>
   </div>
   <div class="div1" style=" margin-left: 2rem; background-color: rgb(236, 228, 228); height:10rem;margin-right: 1rem; padding-left:1rem;margin-top: 10rem;"style=" margin-left: 2rem; background-color: rgb(236, 228, 228); height:10rem;margin-right: 1rem; padding-left:1rem;margin-top: 10rem;">
-    <!-- <img src="images/cnc.png" alt="CNC" > -->
+   
     <h2>About YCSPOut</h2>
     <p style="font-size:1.2rem; font-style: italic;"> YCSPOut is a comprehensive educational tool, guiding students from foundational public speaking skills to advanced levels.</p>
   </div>
@@ -109,15 +109,15 @@
 
 <footer class="footer">
   <div class="container text-center">
-    <p>&copy; 2024 YCSPOut. All Rights Reserved.</p>
+    <p>&copy; 2024 YCSPOut.Empowering Rural Students to Speak Out. All Rights Reserved.</p>
   </div>
 </footer>
 
-<!-- Bootstrap JS (optional if you need dropdowns or toggling features) -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-zoGscyZmYpBfYzEJz1z9sUvz5+Ak2kIyBEJ6vGyyzY6ZmZl8ebvMEtFkpfQ8eqlJ" crossorigin="anonymous"></script>
 
 <script>
-  // Function to handle form submissio
+  
 
   function toggleSignup() {
     var signupForm = document.getElementById("signupForm");

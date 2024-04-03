@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Perform SQL insertion to add the user
     $query = "INSERT INTO user (names, email, password, role) VALUES ('$names', '$email', '$hashed_password', '$role')";
     if (mysqli_query($con, $query)) {
-        header("Location: admin.php"); // Redirect back to the admin page
+        header("Location: adm.php"); // Redirect back to the admin page
         exit;
     } else {
         echo "Error: " . mysqli_error($con);
@@ -102,7 +102,7 @@ button[type="submit"]:hover {
         </div>
         
         <div class="form-group">
-            <label for="password">Password:</label> <!-- Adding password field -->
+            <label for="password">Password:</label> 
             <input type="password" class="form-control" id="password" name="password">
         </div>
         <div class="form-group">

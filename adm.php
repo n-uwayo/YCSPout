@@ -68,8 +68,8 @@ $result = mysqli_query($con, $query);
     <div class="navbarNav">
       <a class="nav-link active" aria-current="page" href="index.php" onclick="toggleSignup()">Home</a>
       <a class="nav-link" href="manage_user.php">Tasks aploaded</a>
-      <a class="nav-link" href="manage_submition.php" >Student Participation</a> <!-- Link to get feedback -->
-      <a class="nav-link" href="index.php" onclick="toggleLogin()">Logout</a> <!-- Added Login link -->
+      <a class="nav-link" href="manage_submition.php" >Student Participation</a> 
+      <a class="nav-link" href="index.php" onclick="toggleLogin()">Logout</a> 
     </div>
   </div>
 </nav>
@@ -113,7 +113,7 @@ $result = mysqli_query($con, $query);
 </div>
 <footer class="footer">
   <div class="container text-center">
-    <p>&copy; 2024 YCSPOut. All Rights Reserved.</p>
+    <p>&copy; 2024 YCSPOut.Empowering Rural Students to Speak Out. All Rights Reserved.</p>
   </div>
 </footer>
 

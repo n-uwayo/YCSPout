@@ -65,12 +65,12 @@ $result = mysqli_query($con, $query);
 </section>
 </div>
 
-<!-- Feedback Form -->
+
 
 
 <footer class="footer">
     <div class="container text-center">
-        <p>&copy; 2024 YCSPOut. All Rights Reserved.</p>
+        <p>&copy; 2024 YCSPOut.Empowering Rural Students to Speak Out. All Rights Reserved.</p>
     </div>
 </footer>
 </body>

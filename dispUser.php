@@ -77,10 +77,10 @@ if(isset($_POST['submit'])) {
       <img src="images/log.png" alt="ycspout" width="30" height="30" class="d-inline-block align-top"><p style="color:beige;">You Can Speak Out</p>
     </a>
     <div class="navbarNav">
-      <a class="nav-link active" aria-current="page" href="index.php" onclick="toggleSignup()">Home</a>
+      <a class="nav-link active" aria-current="page" href="index.php" >Home</a>
       <a class="nav-link" href="user.php">My account</a>
-      <a class="nav-link" href="?get_feedback=true" onclick="toggleSignup()">Get Feedback</a> <!-- Link to get feedback -->
-      <a class="nav-link" href="index.php" onclick="toggleLogin()">Logout</a> <!-- Added Login link -->
+      <a class="nav-link" href="?get_feedback=true" >Get Feedback</a> 
+      <a class="nav-link" href="index.php" >Logout</a>
     </div>
   </div>
 </nav>
@@ -126,7 +126,7 @@ if(isset($_POST['submit'])) {
 
 <footer class="footer">
   <div class="container text-center">
-    <p>&copy; 2024 YCSPOut. All Rights Reserved.</p>
+    <p>&copy; 2024 YCSPOut.Empowering Rural Students to Speak Out. All Rights Reserved.</p>
   </div>
 </footer>
 </body>
