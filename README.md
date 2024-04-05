@@ -12,6 +12,16 @@ This platform  leveraged opportunities provided by the ConnectRwanda initiative 
 
 ### How to access the platform 
 To access the YCPOut platform, you can visit it here  <a href="https://ycspout.000webhostapp.com/index.php ">YCSPOUT </a> or open your browser and copy and paste this link "https://ycspout.000webhostapp.com/index.php"
+##  Details for users
+### Admin credentials
+**Email:** noella2@gmail.com
+**Password:** 123
+#### One instructor/educator 
+**Email:** ruth@gmail.com
+**Password:** 456 
+**Email:** uwize23@gmail.com
+**Password:** uwize23@
+
 ## Technologies Used
 
 **1. Visual Studio code editor:** For coding. 
