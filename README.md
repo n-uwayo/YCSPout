@@ -14,7 +14,7 @@ This platform  leveraged opportunities provided by the ConnectRwanda initiative 
 To access the YCPOut platform, you can visit it here  <a href="https://ycspout.000webhostapp.com/index.php ">YCSPOUT </a> or open your browser and copy and paste this link "https://ycspout.000webhostapp.com/index.php"
 ## Technologies Used
 
-** 1. Visual Studio code editor:** For coding 
+**1. Visual Studio code editor:** For coding 
 #### 2. PHP: Backend server environment.
 #### 3. MYSQL: Database management system
 #### 4.  HTML $ CSS javascript: Frontend library for building user interfaces
