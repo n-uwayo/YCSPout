@@ -24,4 +24,10 @@ To access the YCPOut platform, you can visit it here  <a href="https://ycspout.0
 
 **5. 000webhost.com:** To host the platform.
 ## Contributors
-[Noella UWAYO] [Github](https://github.com/n-uwayo)
+Noella UWAYO [ MY Github](https://github.com/n-uwayo)
+## Contact
+For any questions or feedback, reach me by email at n.uwayo@alustudent.com
+## Acknowledgments
+Special thanks to Isiaq Gbadamosi and the entire B.S.E. coaching staff for inspiration and guidance during the developmental process. Your insights and encouragement are playing a pivotal role in shaping my mission and vision.
+## Author
+  Noella UWAYO
