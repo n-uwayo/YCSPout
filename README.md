@@ -15,8 +15,8 @@ To access the YCPOut platform, you can visit it here  <a href="https://ycspout.0
 ## Technologies Used
 
 **1. Visual Studio code editor:** For coding 
-#### 2. PHP: Backend server environment.
-#### 3. MYSQL: Database management system
-#### 4.  HTML $ CSS javascript: Frontend library for building user interfaces
-#### 5. 000webhost.com: To host the platform
+**2. PHP:** Backend server environment.
+**3. MYSQL:** Database management system
+**4.  HTML $ CSS javascript:** Frontend library for building user interfaces
+**5. 000webhost.com:** To host the platform
 
