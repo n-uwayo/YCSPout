@@ -15,10 +15,14 @@ To access the YCPOut platform, you can visit it here  <a href="https://ycspout.0
 ##  Details for users
 ### Admin credentials
 **Email:** noella2@gmail.com
+
 **Password:** 123
+
 #### One instructor/educator 
 **Email:** ruth@gmail.com
+
 **Password:** 456 
+### student
 **Email:** uwize23@gmail.com
 **Password:** uwize23@
 
