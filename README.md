@@ -11,4 +11,4 @@ This platform  leveraged opportunities provided by the ConnectRwanda initiative 
 ![Screenshot 2024-04-03 191825](https://github.com/n-uwayo/YCSPout/assets/122350054/e25297d4-4860-4c59-817d-217f5522889c)
 
 ### How to access the platform 
-To access the YCPOut platform, you can visit it here  <a href="https://ycspout.000webhostapp.com/index.php ">YCSPOUT </a or open your browser and copy and paste this link
+To access the YCPOut platform, you can visit it here  <a href="https://ycspout.000webhostapp.com/index.php ">YCSPOUT </a> or open your browser and copy and paste this link "https://ycspout.000webhostapp.com/index.php"
